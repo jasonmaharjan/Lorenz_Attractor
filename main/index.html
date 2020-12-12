@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="">
+<html>
 
 <head>
   <meta charset="utf-8">
@@ -53,6 +53,19 @@
       background-color: rgb(204, 204, 204);
       color: black;
     }
+
+    .input-container {
+      position: absolute;
+      top: 15rem;
+      right: 3rem;
+      padding: 1rem;
+      display: flex;
+    }
+
+    .input-label {
+      color: white;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
   </style>
 
   <script src="../p5.js"></script>
@@ -62,6 +75,7 @@
 
 <body>
   <div class = "title">LORENZ ATTRACTOR</div>
+
   <div class = "button-container">
     <div class = "container">
       <button class = "button" onClick = "rotation()">3D Rotation</button>
@@ -71,6 +85,17 @@
       <button class = "button" onClick = "yz()">Y-Z Plane</button>
       <button class = "button" onClick = "xz()">X-Z Plane</button>
     </div>
+  </div> 
+
+  <div class = "input-container">
+    <form class="input-form">
+      <span class = "input-label">Sigma</span>
+      <input class = "input-field" placeholder = "a" label = "a"/>
+      <span class = "input-label">Rho</span>
+      <input class = "input-field" placeholder = "a" label = "a"/>
+      <span class = "input-label">Beta</span>
+      <input class = "input-field" placeholder = "a" label = "a"/>
+    </form>
   </div> 
 </body>
 </html>
